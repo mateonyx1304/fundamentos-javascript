@@ -40,7 +40,6 @@ for (let i = 0; i < notas.length; i++) {
 
 
 // for of
-
 const frutas = ['manzana', 'pera', 'naranja'];
 
 for (const fruta of frutas ) {
@@ -59,8 +58,9 @@ for (const fruta of frutas ) {
 // for of es recomendado para recorrer strings, ya que recorre los caracteres del string, no las propiedades
 // for of es recomendado para recorrer cualquier iterable, como arrays, strings, maps, sets, etc.
 
-// for in
 
+
+// for in
 const persona = {nombre: 'mateo', edad: 29};
 
 for (const clave in persona) {
@@ -76,3 +76,39 @@ for (const clave in persona) {
 
 
 
+// While
+
+let contador = 0;
+
+while (contador < 5) {
+    contador ++;
+    console.log(contador);
+}
+// 1, 2, 3, 4, 5
+// while es una forma de repetir un bloque de codigo mientras se cumpla una condicion
+// while es recomendado para repetir un bloque de codigo mientras se cumpla una condicion, ya que no sabemos cuantas veces se va a repetir
+// while es una forma de repetir un bloque de codigo mientras se cumpla una condicion, pero no es recomendado para repetir un bloque de codigo un numero determinado de veces, ya que es mas facil usar un for
+// while es una forma de repetir un bloque de codigo mientras se cumpla una condicion, pero no es recomendado para repetir un bloque de codigo un numero indeterminado de veces, ya que puede generar un bucle infinito
+// while no es recomendado para repetir un bloque de codigo un numero determinado de veces, ya que es mas facil usar un for
+// while no es recomendado para repetir un bloque de codigo un numero indeterminado de veces, ya que puede generar un bucle infinito
+// while no es recomendado para repetir un bloque de codigo mientras se cumpla una condicion, ya que puede generar un bucle infinito
+
+
+// do while
+let numero = 0;
+do {
+    console.log(`Entra en: ${numero}`);
+    numero++;
+} while (numero < 3) {
+    console.log(numero);
+}
+// Entra en: 0
+// Entra en: 1
+// Entra en: 2
+// 3
+// do while es una forma de repetir un bloque de codigo al menos una vez, ya que la condicion se evalua al final del bloque de codigo
+// do while es recomendado para repetir un bloque de codigo al menos una vez, ya que la condicion se evalua al final del bloque de codigo
+// do while no es recomendado para repetir un bloque de codigo mientras se cumpla una condicion, ya que puede generar un bucle infinito
+// do while no es recomendado para repetir un bloque de codigo un numero determinado de veces, ya que es mas facil usar un for
+// do while no es recomendado para repetir un bloque de codigo un numero indeterminado de veces, ya que puede generar un bucle infinito
+// do while no es recomendado para repetir un bloque de codigo mientras se cumpla una condicion, ya que puede generar un bucle infinito
