@@ -17,6 +17,8 @@ const notasFecha = notas.map((nota) => ({
 }));
 //console.log(notasFecha);
 
+
+
 // Filter()
 
 const notas2 = [
@@ -28,4 +30,23 @@ const favoritas = notas2.filter((nota) => nota.esFavorita);
 //console.log(favoritas)
 
 const titulo = notas2.filter((nota) => nota.title.toLowerCase().includes('nota 1'));
-console.log(titulo)
+//  console.log(titulo)
+
+
+
+// Find()
+
+const notas3 = [
+  { id: 1, title: 'Nota 1', content: 'Contenido 1', esFavorita: true, },
+  { id: 2, title: 'Nota 2', content: 'Contenido 2', esFavorita: false, },
+  { id: 3, title: 'Nota 3', content: 'Contenido 3', esFavorita: true, }
+];
+
+const nota = notas3.find((nota) => nota.id === 2);
+// console.log(nota);
+
+// Reduce()
+
+const numeros = [1,2,3,4,5];
+const suma = numeros.reduce((acc, n) => acc + n, 0)
+console.log(suma);
